@@ -8,22 +8,17 @@
         Title="Вход" Height="190" Width="327" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="9*"/>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="5*"/>
-            <RowDefinition Height="2*"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="14*"/>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="14*"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="tb_log" HorizontalAlignment="Left" Height="23" Margin="81,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Grid.ColumnSpan="3" TextChanged="Tb_log_TextChanged"/>
+        <TextBox x:Name="tb_log" Height="23" Margin="81,25,30,0" TextWrapping="Wrap" VerticalAlignment="Top" TextChanged="Tb_log_TextChanged"/>
         <Label Content="Пароль" HorizontalAlignment="Left" Margin="30,49,0,0" VerticalAlignment="Top" Height="27"/>
         <Label Content="Логин" HorizontalAlignment="Left" Margin="36,21,0,0" VerticalAlignment="Top" Height="27"/>
-        <PasswordBox x:Name="tb_pass" HorizontalAlignment="Left" Margin="81,53,0,0" VerticalAlignment="Top" Height="23" Width="210" Grid.ColumnSpan="3" PasswordChanged="Tb_pass_PasswordChanged"/>
-        <Button x:Name="b_reg" Content="Регистрация" HorizontalAlignment="Right" Grid.Row="2" Width="120" Height="40" VerticalContentAlignment="Center" Click="B_reg_Click"/>
-        <Button x:Name="b_ent" Content="Вход" HorizontalAlignment="Left" Grid.Row="2" Width="120" Height="40" Grid.Column="2" IsEnabled="False" Click="B_ent_Click"/>
+        <PasswordBox x:Name="tb_pass" Margin="81,53,30,0" VerticalAlignment="Top" Height="23" PasswordChanged="Tb_pass_PasswordChanged"/>
+        <Button x:Name="b_reg" Content="Регистрация" Height="40" VerticalContentAlignment="Center" Click="B_reg_Click" Margin="30,0,0,21" HorizontalAlignment="Left" Width="120" VerticalAlignment="Bottom"/>
+        <Button x:Name="b_ent" Content="Вход" Height="40" IsEnabled="False" Click="B_ent_Click" Margin="0,0,30,21" HorizontalAlignment="Right" Width="120" VerticalAlignment="Bottom"/>
 
     </Grid>
 </Window>

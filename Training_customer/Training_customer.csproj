@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Main_win.xaml.cs">
+      <DependentUpon>Main_win.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Reg_win.xaml.cs">
       <DependentUpon>Reg_win.xaml</DependentUpon>
     </Compile>
@@ -70,6 +73,10 @@
       <DependentUpon>Login_win.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Main_win.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Reg_win.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -100,6 +107,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="res\add_list.png" />
+    <Resource Include="res\list.png" />
+    <Resource Include="res\profile.png" />
+    <Resource Include="res\remove_list.png" />
+    <Resource Include="res\signout.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

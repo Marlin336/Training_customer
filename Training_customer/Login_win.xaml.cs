@@ -55,7 +55,9 @@ namespace Training_customer
 				}
 				else
 				{
-					/*Переход к главной форме*/
+					Main_win main = new Main_win(this);
+					main.Show();
+					Hide();
 				}
 			}
 		}
