@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Training_customer"
         mc:Ignorable="d"
-        Title="Ваши группы" Height="560" Width="810" MinHeight="560" MinWidth="543" Closed="Window_Closed">
+        Title="Ваши группы" Height="560" Width="810" MinHeight="560" MinWidth="543" Closing="Window_Closing">
     <Grid Margin="0,0,0,-1">
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -27,7 +27,17 @@
         <Label x:Name="l_balance" Content="0" HorizontalAlignment="Left" Margin="85,0,0,18" Height="35" VerticalAlignment="Bottom" FontSize="20"/>
         <TextBox x:Name="tb_colsearch" HorizontalAlignment="Left" Height="23" Margin="150,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="248"/>
         <ComboBox x:Name="cb_colsearch" HorizontalAlignment="Left" Margin="150,9,0,0" VerticalAlignment="Top" Width="248"/>
-        <Label Content="Поиск по столбцу:" HorizontalAlignment="Left" Margin="10,9,0,0" VerticalAlignment="Top" FontSize="16" Height="22" RenderTransformOrigin="0.5,0.5" VerticalContentAlignment="Bottom" Padding="0,0,0,1">
+        <Label Content="Поиск по столбцу:" HorizontalAlignment="Left" Margin="10,9,0,0" VerticalAlignment="Top" FontSize="16" Height="22" RenderTransformOrigin="0.5,0.5" VerticalContentAlignment="Bottom" Padding="0,0,0,1" HorizontalContentAlignment="Right">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1" ScaleX="1"/>
+                    <SkewTransform AngleY="0" AngleX="0"/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Значение:" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top" FontSize="16" Height="22" RenderTransformOrigin="0.5,0.5" VerticalContentAlignment="Bottom" Padding="0,0,0,1" Width="135" HorizontalContentAlignment="Right">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleY="1" ScaleX="1"/>

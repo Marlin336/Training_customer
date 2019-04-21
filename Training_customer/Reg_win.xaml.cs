@@ -20,7 +20,6 @@ namespace Training_customer
 	/// </summary>
 	public partial class Reg_win : Window
 	{
-		string phone = "";
 		public Reg_win()
 		{
 			InitializeComponent();

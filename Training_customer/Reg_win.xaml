@@ -24,14 +24,13 @@
         <Label Content="Отчество" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,65,0,0"/>
         <Label Content="Фамилия" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,37,0,0"/>
         <Button x:Name="b_reg" Content="Зарегистрироваться" Margin="24,0,24,10" VerticalAlignment="Bottom" Height="40" Click="B_reg_Click" TabIndex="9"/>
-        <Separator Margin="10,148,10,143"/>
+        <Separator Margin="10,153,10,146"/>
         <Label Content="*" HorizontalAlignment="Left" Margin="272,35,0,0" VerticalAlignment="Top" Foreground="#FFF70505" Height="28" ToolTip="Важное поле"/>
         <Label Content="*" HorizontalAlignment="Left" Margin="272,7,0,0" VerticalAlignment="Top" Foreground="#FFF70505" Height="28" ToolTip="Важное поле"/>
         <Label Content="*" HorizontalAlignment="Left" Margin="272,63,0,0" VerticalAlignment="Top" Foreground="#FFF70505" Height="28" ToolTip="Важное поле"/>
-        <Label Content="*" HorizontalAlignment="Left" Margin="273,92,0,0" VerticalAlignment="Top" Foreground="#FFF70505" Height="28"/>
+        <Label Content="*" HorizontalAlignment="Left" Margin="273,92,0,0" VerticalAlignment="Top" Foreground="#FFF70505" Height="28" ToolTip="Важное поле"/>
         <Label Content="*" HorizontalAlignment="Left" Margin="273,170,0,0" VerticalAlignment="Top" Foreground="#FFF70505" Height="28" ToolTip="Важное поле"/>
         <Label Content="*" HorizontalAlignment="Left" Margin="273,198,0,0" VerticalAlignment="Top" Foreground="#FFF70505" Height="28" ToolTip="Важное поле"/>
-        <Label Content="*" HorizontalAlignment="Left" Margin="273,92,0,0" VerticalAlignment="Top" Foreground="#FFF70505" Height="28" ToolTip="Важное поле"/>
         <Label Content="*" HorizontalAlignment="Left" Margin="272,226,0,0" VerticalAlignment="Top" Foreground="#FFF70505" Height="28" ToolTip="Важное поле"/>
 
     </Grid>
