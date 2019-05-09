@@ -55,11 +55,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Exercise_win.xaml.cs">
+      <DependentUpon>Exercise_win.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Groups_win.xaml.cs">
       <DependentUpon>Groups_win.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Log_win.xaml.cs">
+      <DependentUpon>Log_win.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Main_win.xaml.cs">
       <DependentUpon>Main_win.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Muscle_win.xaml.cs">
+      <DependentUpon>Muscle_win.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Passreq_win.xaml.cs">
+      <DependentUpon>Passreq_win.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileEdit_win.xaml.cs">
+      <DependentUpon>ProfileEdit_win.xaml</DependentUpon>
     </Compile>
     <Compile Include="Profile_win.xaml.cs">
       <DependentUpon>Profile_win.xaml</DependentUpon>
@@ -67,6 +82,13 @@
     <Compile Include="Reg_win.xaml.cs">
       <DependentUpon>Reg_win.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Trainer_win.xaml.cs">
+      <DependentUpon>Trainer_win.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Exercise_win.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Groups_win.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -83,7 +105,23 @@
       <DependentUpon>Login_win.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Log_win.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Main_win.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Muscle_win.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Passreq_win.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProfileEdit_win.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -92,6 +130,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Reg_win.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Trainer_win.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

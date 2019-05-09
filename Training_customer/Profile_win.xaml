@@ -4,25 +4,17 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Training_customer"
-        mc:Ignorable="d" Height="272" Width="354" Title="Профиль">
+        mc:Ignorable="d" Height="152" Width="404" Title="Профиль" MinWidth="274" MinHeight="152">
     <Grid>
-        <TextBox x:Name="tb_name" HorizontalAlignment="Left" Height="23" Margin="77,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="248" TabIndex="1"/>
-        <TextBox x:Name="tb_pname" HorizontalAlignment="Left" Height="23" Margin="77,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="248" TabIndex="3"/>
-        <TextBox x:Name="tb_sname" HorizontalAlignment="Left" Height="23" Margin="77,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="248" TabIndex="2"/>
-        <TextBox x:Name="tb_phone" HorizontalAlignment="Left" Height="23" Margin="79,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" TabIndex="5"/>
-        <TextBox x:Name="tb_login" HorizontalAlignment="Left" Height="23" Margin="69,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201" TabIndex="6"/>
-        <PasswordBox x:Name="tb_pass" HorizontalAlignment="Left" Margin="69,203,0,0" VerticalAlignment="Top" Width="201" Height="23" TabIndex="7"/>
-        <Label Content="Имя" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="39,9,0,0"/>
-        <Label Content="Пароль" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,200,0,0"/>
-        <Label Content="Логин" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,172,0,0"/>
-        <Label Content="E-mail" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="29,122,0,0"/>
-        <Label Content="Дата рождения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,94,0,0"/>
-        <Label Content="Отчество" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,65,0,0"/>
-        <Label Content="Фамилия" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,37,0,0"/>
-        <Separator Margin="10,153,0,0" HorizontalAlignment="Left" Width="326" Height="17" VerticalAlignment="Top"/>
-        <TextBox x:Name="tb_sname_Copy" HorizontalAlignment="Left" Height="23" Margin="106,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="219" TabIndex="2"/>
-        <Button x:Name="b_edit" HorizontalAlignment="Left" Margin="275,176,0,0" VerticalAlignment="Top" Width="50" Height="50">
-            <Image Source="res/edit.png" Height="36" Width="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="l_name" Content="Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" FontWeight="Bold"/>
+        <Label Content="Логин: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,88,0,0"/>
+        <Label Content="E-mail: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,62,0,0"/>
+        <Label Content="Дата рождения: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,36,0,0"/>
+        <Button x:Name="b_edit" Margin="0,0,10,7" HorizontalAlignment="Right" Width="50" ToolTip="Редактировать" Height="31" VerticalAlignment="Bottom" Click="B_edit_Click">
+            <Image Source="res/Edit.png"/>
         </Button>
 
     </Grid>

@@ -15,21 +15,15 @@ using System.Windows.Shapes;
 namespace Training_customer
 {
     /// <summary>
-    /// Логика взаимодействия для Profile_win.xaml
+    /// Логика взаимодействия для Log_win.xaml
     /// </summary>
-    public partial class Profile_win : Window
+    public partial class Log_win : Window
     {
-		public Main_win super { get; }
-        public Profile_win(Main_win super)
+		public Main_win super { get; private set; }
+        public Log_win(Main_win super)
         {
-			this.super = super;
             InitializeComponent();
+			this.super = super;
         }
-
-		private void B_edit_Click(object sender, RoutedEventArgs e)
-		{
-			Passreq_win passreq = new Passreq_win(this);
-			passreq.Show();
-		}
-	}
+    }
 }

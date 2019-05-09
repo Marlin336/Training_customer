@@ -69,5 +69,11 @@ namespace Training_customer
 					e.Cancel = true;
 			}
 		}
+
+		private void B_log_Click(object sender, RoutedEventArgs e)
+		{
+			Log_win log = new Log_win(this);
+			log.Show();
+		}
 	}
 }

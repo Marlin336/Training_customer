@@ -23,8 +23,7 @@
         <Button x:Name="b_glist" Margin="0,0,10,10" HorizontalAlignment="Right" Width="50" Height="50" VerticalAlignment="Bottom" Click="B_glist_Click">
             <Image Source="res/list.png" ToolTip="Просмотреть список доступных групп"/>
         </Button>
-        <Label Content="Баланс:" HorizontalAlignment="Left" Margin="10,0,0,10" Width="80" Height="43" VerticalAlignment="Bottom" FontSize="20"/>
-        <Label x:Name="l_balance" Content="0" HorizontalAlignment="Left" Margin="85,0,0,18" Height="35" VerticalAlignment="Bottom" FontSize="20"/>
+        <Label x:Name="l_bal" Content="Баланс: " HorizontalAlignment="Left" Margin="10,0,0,22" Height="35" VerticalAlignment="Bottom" FontSize="20"/>
         <TextBox x:Name="tb_colsearch" HorizontalAlignment="Left" Height="23" Margin="150,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="248"/>
         <ComboBox x:Name="cb_colsearch" HorizontalAlignment="Left" Margin="150,9,0,0" VerticalAlignment="Top" Width="248"/>
         <Label Content="Поиск по столбцу:" HorizontalAlignment="Left" Margin="10,9,0,0" VerticalAlignment="Top" FontSize="16" Height="22" RenderTransformOrigin="0.5,0.5" VerticalContentAlignment="Bottom" Padding="0,0,0,1" HorizontalContentAlignment="Right">
@@ -47,6 +46,9 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
+        <Button x:Name="b_log" Margin="0,10,142,0" VerticalAlignment="Top" Height="50" HorizontalAlignment="Right" Width="50" Click="B_log_Click">
+            <Image Source="res/profile.png" ToolTip="Журнал посещений"/>
+        </Button>
 
     </Grid>
 </Window>

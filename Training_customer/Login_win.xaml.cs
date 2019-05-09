@@ -43,13 +43,13 @@ namespace Training_customer
 
 		private void B_ent_Click(object sender, RoutedEventArgs e)
 		{
-			if (/*Неверный логин*/false)
+			if (/*Неверный логин*/tb_log.Text != "login")
 			{
 				MessageBox.Show("Пользователя с таким логином не существует", "Ошибка авторизации", MessageBoxButton.OK, MessageBoxImage.Asterisk);
 			}
 			else
 			{
-				if (/*Неверный пароль*/false)
+				if (/*Неверный пароль*/tb_pass.Password != "0000")
 				{
 					MessageBox.Show("Пара логин-пароль не совпадают", "Ошибка авторизации", MessageBoxButton.OK, MessageBoxImage.Warning);
 				}
