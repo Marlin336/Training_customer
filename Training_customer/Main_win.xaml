@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Training_customer"
         mc:Ignorable="d"
-        Title="Ваши группы" Height="560" Width="810" MinHeight="560" MinWidth="543" Closing="Window_Closing">
+        Title="Ваши группы" Height="560" Width="794" MinHeight="560" MinWidth="609" Closing="Window_Closing">
     <Grid Margin="0,0,0,-1">
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -21,7 +21,7 @@
             <Image Source="res/signout.png" ToolTip="Выйти"/>
         </Button>
         <Button x:Name="b_glist" Margin="0,0,10,10" HorizontalAlignment="Right" Width="50" Height="50" VerticalAlignment="Bottom" Click="B_glist_Click">
-            <Image Source="res/browser.png" ToolTip="Просмотреть список доступных групп"/>
+            <Image Source="res/browser.png" ToolTip="Список доступных групп"/>
         </Button>
         <Label x:Name="l_bal" Content="Баланс: " HorizontalAlignment="Left" Margin="10,0,0,22" Height="35" VerticalAlignment="Bottom" FontSize="20"/>
         <TextBox x:Name="tb_colsearch" HorizontalAlignment="Left" Height="23" Margin="150,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="248"/>

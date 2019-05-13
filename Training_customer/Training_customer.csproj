@@ -55,9 +55,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Exercise_win.xaml.cs">
-      <DependentUpon>Exercise_win.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Groups_win.xaml.cs">
       <DependentUpon>Groups_win.xaml</DependentUpon>
     </Compile>
@@ -66,9 +63,6 @@
     </Compile>
     <Compile Include="Main_win.xaml.cs">
       <DependentUpon>Main_win.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Muscle_win.xaml.cs">
-      <DependentUpon>Muscle_win.xaml</DependentUpon>
     </Compile>
     <Compile Include="Passreq_win.xaml.cs">
       <DependentUpon>Passreq_win.xaml</DependentUpon>
@@ -85,10 +79,9 @@
     <Compile Include="Trainer_win.xaml.cs">
       <DependentUpon>Trainer_win.xaml</DependentUpon>
     </Compile>
-    <Page Include="Exercise_win.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+    <Compile Include="View_win.xaml.cs">
+      <DependentUpon>View_win.xaml</DependentUpon>
+    </Compile>
     <Page Include="Groups_win.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -113,10 +106,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Muscle_win.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Passreq_win.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -134,6 +123,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Trainer_win.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View_win.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -176,6 +169,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="res\show.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="res\browser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="res\book.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,17 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Training_customer"
         mc:Ignorable="d"
-        Title="Журналирование" Height="487" Width="800">
+        Title="Журналирование" Height="487" Width="964">
     <Grid>
         <TabControl Margin="10">
             <TabItem x:Name="tab_log" Header="Журнал посещений">
                 <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
                     <DataGrid x:Name="dg_log"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="tab_transact" Header="Журнал транзакций">
                 <Grid Background="#FFE5E5E5" Margin="0,0,0,-2">
-                    <DataGrid x:Name="dg_trans"/>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <DataGrid x:Name="dg_trans" Margin="0,0,0,2"/>
                 </Grid>
             </TabItem>
         </TabControl>

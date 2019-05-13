@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Training_customer
 {
     /// <summary>
-    /// Логика взаимодействия для Muscle_win.xaml
+    /// Логика взаимодействия для View_win.xaml
     /// </summary>
-    public partial class Muscle_win : Window
+    public partial class View_win : Window
     {
-        public Muscle_win()
+        public View_win()
         {
             InitializeComponent();
         }
