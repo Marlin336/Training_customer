@@ -21,7 +21,7 @@
             <Image Source="res/signout.png" ToolTip="Выйти"/>
         </Button>
         <Button x:Name="b_glist" Margin="0,0,10,10" HorizontalAlignment="Right" Width="50" Height="50" VerticalAlignment="Bottom" Click="B_glist_Click">
-            <Image Source="res/list.png" ToolTip="Просмотреть список доступных групп"/>
+            <Image Source="res/browser.png" ToolTip="Просмотреть список доступных групп"/>
         </Button>
         <Label x:Name="l_bal" Content="Баланс: " HorizontalAlignment="Left" Margin="10,0,0,22" Height="35" VerticalAlignment="Bottom" FontSize="20"/>
         <TextBox x:Name="tb_colsearch" HorizontalAlignment="Left" Height="23" Margin="150,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="248"/>
@@ -47,7 +47,7 @@
             </Label.RenderTransform>
         </Label>
         <Button x:Name="b_log" Margin="0,10,142,0" VerticalAlignment="Top" Height="50" HorizontalAlignment="Right" Width="50" Click="B_log_Click">
-            <Image Source="res/profile.png" ToolTip="Журнал посещений"/>
+            <Image Source="res/book.png" ToolTip="Журналирование"/>
         </Button>
 
     </Grid>
