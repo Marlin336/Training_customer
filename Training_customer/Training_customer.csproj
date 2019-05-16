@@ -55,9 +55,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Groups_win.xaml.cs">
-      <DependentUpon>Groups_win.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Log_win.xaml.cs">
       <DependentUpon>Log_win.xaml</DependentUpon>
     </Compile>
@@ -66,9 +63,6 @@
     </Compile>
     <Compile Include="Passreq_win.xaml.cs">
       <DependentUpon>Passreq_win.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ProfileEdit_win.xaml.cs">
-      <DependentUpon>ProfileEdit_win.xaml</DependentUpon>
     </Compile>
     <Compile Include="Profile_win.xaml.cs">
       <DependentUpon>Profile_win.xaml</DependentUpon>
@@ -82,10 +76,6 @@
     <Compile Include="View_win.xaml.cs">
       <DependentUpon>View_win.xaml</DependentUpon>
     </Compile>
-    <Page Include="Groups_win.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Login_win.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -107,10 +97,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Passreq_win.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ProfileEdit_win.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

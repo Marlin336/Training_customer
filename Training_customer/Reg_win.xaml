@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Training_customer"
         mc:Ignorable="d"
-        Title="Регистрация" Height="366" Width="303" ResizeMode="NoResize">
+        Title="Регистрация" Height="363.333" Width="303" ResizeMode="NoResize">
     <Grid>
         <TextBox x:Name="tb_name" HorizontalAlignment="Left" Height="23" Margin="77,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" TabIndex="1"/>
         <TextBox x:Name="tb_pname" HorizontalAlignment="Left" Height="23" Margin="77,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" TabIndex="3"/>
@@ -23,7 +23,7 @@
         <Label Content="Дата рождения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,94,0,0"/>
         <Label Content="Отчество" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,65,0,0"/>
         <Label Content="Фамилия" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,37,0,0"/>
-        <Button x:Name="b_reg" Content="Зарегистрироваться" Margin="24,268,0,0" VerticalAlignment="Top" Height="47" Click="B_reg_Click" TabIndex="9" HorizontalAlignment="Left" Width="249"/>
+        <Button x:Name="b_reg" Content="Сохранить" Margin="10,268,10,10" Click="B_reg_Click" TabIndex="9"/>
         <Separator Margin="10,153,0,0" HorizontalAlignment="Left" Width="277" Height="22" VerticalAlignment="Top"/>
         <Label Content="*" HorizontalAlignment="Left" Margin="272,35,0,0" VerticalAlignment="Top" Foreground="#FFF70505" Height="28" ToolTip="Важное поле"/>
         <Label Content="*" HorizontalAlignment="Left" Margin="272,7,0,0" VerticalAlignment="Top" Foreground="#FFF70505" Height="28" ToolTip="Важное поле"/>

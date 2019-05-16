@@ -39,12 +39,6 @@ namespace Training_customer
 			Close();
 		}
 
-		private void B_glist_Click(object sender, RoutedEventArgs e)
-		{
-			Groups_win groups = new Groups_win(this);
-			groups.Show();
-		}
-
 		private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
 		{
 			if (logout)

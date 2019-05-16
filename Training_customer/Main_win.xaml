@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Training_customer"
         mc:Ignorable="d"
-        Title="Ваши группы" Height="560" Width="794" MinHeight="560" MinWidth="609" Closing="Window_Closing">
+        Title="Client" Height="525" Width="725" Closing="Window_Closing" MinWidth="450" MinHeight="350">
     <Grid Margin="0,0,0,-1">
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -13,42 +13,28 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <DataGrid x:Name="dg_glist" Margin="10,75,10,76"/>
         <Button x:Name="b_prof" Margin="0,10,77,0" VerticalAlignment="Top" Height="50" HorizontalAlignment="Right" Width="50" Click="B_prof_Click">
             <Image Source="res/profile.png" ToolTip="Профиль"/>
         </Button>
         <Button x:Name="b_exit" Margin="0,10,10,0" VerticalAlignment="Top" Height="50" HorizontalAlignment="Right" Width="50" Click="B_exit_Click">
             <Image Source="res/signout.png" ToolTip="Выйти"/>
         </Button>
-        <Button x:Name="b_glist" Margin="0,0,10,10" HorizontalAlignment="Right" Width="50" Height="50" VerticalAlignment="Bottom" Click="B_glist_Click">
-            <Image Source="res/browser.png" ToolTip="Список доступных групп"/>
-        </Button>
-        <Label x:Name="l_bal" Content="Баланс: " HorizontalAlignment="Left" Margin="10,0,0,22" Height="35" VerticalAlignment="Bottom" FontSize="20"/>
-        <TextBox x:Name="tb_colsearch" HorizontalAlignment="Left" Height="23" Margin="150,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="248"/>
-        <ComboBox x:Name="cb_colsearch" HorizontalAlignment="Left" Margin="150,9,0,0" VerticalAlignment="Top" Width="248"/>
-        <Label Content="Поиск по столбцу:" HorizontalAlignment="Left" Margin="10,9,0,0" VerticalAlignment="Top" FontSize="16" Height="22" RenderTransformOrigin="0.5,0.5" VerticalContentAlignment="Bottom" Padding="0,0,0,1" HorizontalContentAlignment="Right">
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleY="1" ScaleX="1"/>
-                    <SkewTransform AngleY="0" AngleX="0"/>
-                    <RotateTransform Angle="0"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Label.RenderTransform>
-        </Label>
-        <Label Content="Значение:" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top" FontSize="16" Height="22" RenderTransformOrigin="0.5,0.5" VerticalContentAlignment="Bottom" Padding="0,0,0,1" Width="135" HorizontalContentAlignment="Right">
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleY="1" ScaleX="1"/>
-                    <SkewTransform AngleY="0" AngleX="0"/>
-                    <RotateTransform Angle="0"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Label.RenderTransform>
-        </Label>
+        <Label x:Name="l_bal" Content="Баланс: " HorizontalAlignment="Left" Margin="10,-1,0,0" FontSize="20" Height="35" VerticalAlignment="Top"/>
         <Button x:Name="b_log" Margin="0,10,142,0" VerticalAlignment="Top" Height="50" HorizontalAlignment="Right" Width="50" Click="B_log_Click">
             <Image Source="res/book.png" ToolTip="Журналирование"/>
         </Button>
+        <TabControl Margin="10,65,10,10">
+            <TabItem Header="Мои группы">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="dg_grlist"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Доступные группы">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="dg_grunlist"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
 
     </Grid>
 </Window>

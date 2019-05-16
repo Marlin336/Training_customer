@@ -30,7 +30,7 @@ namespace Training_customer
 		{
 			if (tb_pass.Password == "0000")//Тестовый
 			{
-				ProfileEdit_win edit = new ProfileEdit_win(super);
+				Reg_win edit = new Reg_win(true);
 				Close();
 				edit.ShowDialog();
 			}

@@ -20,9 +20,15 @@ namespace Training_customer
 	/// </summary>
 	public partial class Reg_win : Window
 	{
-		public Reg_win()
+		private bool edit { get; }
+		public Reg_win(bool editing)
 		{
 			InitializeComponent();
+			edit = editing;
+			if (edit)
+			{
+				Title = "Редактирование";
+			}
 		}
 
 		private void B_reg_Click(object sender, RoutedEventArgs e)

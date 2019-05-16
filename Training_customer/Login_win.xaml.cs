@@ -37,7 +37,7 @@ namespace Training_customer
 
 		private void B_reg_Click(object sender, RoutedEventArgs e)
 		{
-			Reg_win reg_Win = new Reg_win();
+			Reg_win reg_Win = new Reg_win(false);
 			reg_Win.ShowDialog();
 		}
 
