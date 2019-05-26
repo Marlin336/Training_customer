@@ -73,9 +73,6 @@
     <Compile Include="Trainer_win.xaml.cs">
       <DependentUpon>Trainer_win.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View_win.xaml.cs">
-      <DependentUpon>View_win.xaml</DependentUpon>
-    </Compile>
     <Page Include="Login_win.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -109,10 +106,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Trainer_win.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View_win.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
