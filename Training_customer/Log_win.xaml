@@ -32,7 +32,7 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <DataGrid x:Name="dg_trans" FontSize="14">
+                    <DataGrid x:Name="dg_trans" FontSize="14" MouseDoubleClick="Dg_trans_MouseDoubleClick">
                         <DataGrid.Columns>
                             <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="id" Visibility="Collapsed"/>
                             <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Администратор"/>

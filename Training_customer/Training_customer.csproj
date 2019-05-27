@@ -78,6 +78,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Classes.cs" />
+    <Compile Include="Exrc_win.xaml.cs">
+      <DependentUpon>Exrc_win.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Group_win.xaml.cs">
+      <DependentUpon>Group_win.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Log_win.xaml.cs">
       <DependentUpon>Log_win.xaml</DependentUpon>
     </Compile>
@@ -90,12 +96,23 @@
     <Compile Include="Profile_win.xaml.cs">
       <DependentUpon>Profile_win.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Read_win.xaml.cs">
+      <DependentUpon>Read_win.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Reg_win.xaml.cs">
       <DependentUpon>Reg_win.xaml</DependentUpon>
     </Compile>
     <Compile Include="Trainer_win.xaml.cs">
       <DependentUpon>Trainer_win.xaml</DependentUpon>
     </Compile>
+    <Page Include="Exrc_win.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Group_win.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Login_win.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -121,6 +138,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Profile_win.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Read_win.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

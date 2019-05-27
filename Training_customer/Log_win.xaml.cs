@@ -94,5 +94,20 @@ namespace Training_customer
 				}
 			}
 		}
+
+		private void Dg_trans_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+		{
+			if (dg_trans.SelectedItem != null)
+			{
+				TransactList item = dg_trans.SelectedItem as TransactList;
+				string sql = "select description from transact_log where id = " + item.id + "";
+				NpgsqlCommand comm = new NpgsqlCommand(sql, super.conn);
+				super.conn.Open();
+				var a = comm.ExecuteScalar().ToString();
+				Read_win read = new Read_win(comm.ExecuteScalar().ToString());
+				read.Show();
+				super.conn.Close();
+			}
+		}
 	}
 }

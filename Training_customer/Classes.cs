@@ -86,4 +86,14 @@ namespace Training_customer
 			this.pass = pass;
 		}
 	}
+	public class ExerciseList
+	{
+		public int id { get; set; }
+		public string name { get; set; }
+		public ExerciseList(int id, string name)
+		{
+			this.id = id;
+			this.name = name;
+		}
+	}
 }

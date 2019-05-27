@@ -48,7 +48,7 @@
                         </DataGrid.Columns>
                     </DataGrid>
                     <Menu VerticalAlignment="Bottom" Height="40">
-                        <MenuItem x:Name="b_unsub_info" Header="Подробно" Height="40" FontSize="14" IsEnabled="False"/>
+                        <MenuItem x:Name="b_unsub_info" Header="Подробно" Height="40" FontSize="14" IsEnabled="False" Click="B_unsub_info_Click"/>
                         <MenuItem x:Name="b_unsub_trainer" Header="О тренере" Height="40" FontSize="14" IsEnabled="False" Click="B_unsub_trainer_Click"/>
                         <MenuItem x:Name="b_unsub_sub" Header="Подписаться" Height="40" FontSize="14" IsEnabled="False" Click="B_unsub_sub_Click"/>
                         <MenuItem x:Name="b_unsub_update" Header="Обновить список" Height="40" FontSize="14" Click="B_unsub_update_Click"/>

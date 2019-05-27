@@ -232,5 +232,11 @@ namespace Training_customer
 			Trainer_win win = new Trainer_win(this, group.trainer_id);
 			win.Show();
 		}
+
+		private void B_unsub_info_Click(object sender, RoutedEventArgs e)
+		{
+			Group_win win = new Group_win(this, dg_grunlist.SelectedItem as GroupList);
+			win.Show();
+		}
 	}
 }
