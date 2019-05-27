@@ -16,7 +16,7 @@
         <TabControl Margin="0,65,0,0">
             <TabItem Header="Мои группы">
                 <Grid Background="#FFE5E5E5">
-                    <DataGrid x:Name="dg_grlist" Margin="0,0,0,40" IsReadOnly="False" SelectedCellsChanged="Dg_grlist_SelectedCellsChanged">
+                    <DataGrid x:Name="dg_grlist" Margin="0,0,0,40" IsReadOnly="True" SelectedCellsChanged="Dg_grlist_SelectedCellsChanged">
                         <DataGrid.Columns>
                             <DataGridTextColumn Binding="{Binding id}" Header="Код группы"/>
                             <DataGridTextColumn Binding="{Binding trainer_id}" Visibility="Collapsed"/>
@@ -36,7 +36,7 @@
             </TabItem>
             <TabItem Header="Доступные группы">
                 <Grid Background="#FFE5E5E5">
-                    <DataGrid x:Name="dg_grunlist" Margin="0,0,0,40" IsReadOnly="False" SelectedCellsChanged="Dg_grunlist_SelectedCellsChanged">
+                    <DataGrid x:Name="dg_grunlist" Margin="0,0,0,40" IsReadOnly="True" SelectedCellsChanged="Dg_grunlist_SelectedCellsChanged">
                         <DataGrid.Columns>
                             <DataGridTextColumn Binding="{Binding id}" Header="Код группы"/>
                             <DataGridTextColumn Binding="{Binding trainer_id}" Visibility="Collapsed"/>
