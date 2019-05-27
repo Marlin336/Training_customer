@@ -13,9 +13,7 @@
         <Label Content="Логин: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,88,0,0"/>
         <Label Content="E-mail: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,62,0,0"/>
         <Label Content="Дата рождения: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,36,0,0"/>
-        <Button x:Name="b_edit" Margin="0,0,10,7" HorizontalAlignment="Right" Width="50" ToolTip="Редактировать" Height="31" VerticalAlignment="Bottom" Click="B_edit_Click">
-            <Image Source="res/Edit.png"/>
-        </Button>
+        <Button x:Name="b_edit" Margin="0,0,10,7" HorizontalAlignment="Right" Width="50" ToolTip="Редактировать" Height="31" VerticalAlignment="Bottom" Click="B_edit_Click"/>
 
     </Grid>
 </Window>
