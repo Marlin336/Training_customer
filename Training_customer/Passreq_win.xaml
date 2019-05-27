@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Training_customer"
         mc:Ignorable="d"
-        Title="Подтверждение" Width="261" Height="138" ResizeMode="NoResize">
+        Title="Подтверждение" Width="261" Height="157" ResizeMode="NoResize">
     <Grid>
         <Label Content="Введите пароль:" Margin="10,0,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" HorizontalAlignment="Left" FontSize="14"/>
         <PasswordBox x:Name="tb_pass" Margin="10,31,10,0" VerticalAlignment="Top" Height="23"/>
-        <Button x:Name="b_ok" Content="Подтвердить" Margin="42,62,42,0" Height="37" VerticalAlignment="Top" Click="Button_Click" IsDefault="True" FontSize="16" FontWeight="Bold"/>
+        <Button x:Name="b_ok" Content="Подтвердить" Margin="42,0,42,10" Height="37" VerticalAlignment="Bottom" Click="Button_Click" IsDefault="True" FontSize="16" FontWeight="Bold"/>
 
     </Grid>
 </Window>

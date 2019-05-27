@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Training_customer"
         mc:Ignorable="d"
-        Title="Тренер" Height="162" Width="439">
+        Title="Тренер" Height="183" Width="439" ResizeMode="NoResize">
     <Grid>
-        <Label x:Name="l_name" Content="Name" Margin="10,10,0,0" VerticalContentAlignment="Center" FontSize="14" HorizontalAlignment="Left" Width="47" Height="34" VerticalAlignment="Top"/>
-        <Label x:Name="l_mail" Content="E-mail: " HorizontalAlignment="Left" Margin="10,92,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <Label x:Name="l_age" Content="Возраст: " HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="l_name" Content="Name" Margin="10,10,0,103" VerticalContentAlignment="Center" FontSize="14" HorizontalAlignment="Left" FontWeight="Bold"/>
+        <Label x:Name="l_mail" Content="E-mail: " HorizontalAlignment="Left" Margin="10,92,0,22" FontSize="14"/>
+        <Label x:Name="l_age" Content="Возраст: " HorizontalAlignment="Left" Margin="10,51,0,67" FontSize="14"/>
 
     </Grid>
 </Window>

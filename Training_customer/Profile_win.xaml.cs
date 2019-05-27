@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,7 +25,27 @@ namespace Training_customer
         {
 			this.super = super;
             InitializeComponent();
-        }
+			try
+			{
+				NpgsqlCommand comm = new NpgsqlCommand("select sname, fname, pname, birthday, mail, login from my_own_customer(" + super.user_id + ")", super.conn);
+				super.conn.Open();
+				NpgsqlDataReader reader = comm.ExecuteReader();
+				reader.Read();
+				l_name.Content = reader.GetString(0) + " " + reader.GetString(1) + " " + reader.GetString(2);
+				l_birth.Content += reader.GetDate(3).ToString();
+				l_mail.Content += reader.GetValue(4).ToString();
+				l_login.Content += reader.GetString(5);
+			}
+			catch (NpgsqlException ex)
+			{
+				MessageBox.Show(ex.Message, "Ошибка на сервере", MessageBoxButton.OK, MessageBoxImage.Error, MessageBoxResult.OK);
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error, MessageBoxResult.OK);
+			}
+			finally { super.conn.Close(); }
+		}
 
 		private void B_edit_Click(object sender, RoutedEventArgs e)
 		{

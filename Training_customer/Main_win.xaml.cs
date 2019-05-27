@@ -218,5 +218,19 @@ namespace Training_customer
 			}
 			finally { conn.Close(); }
 		}
+
+		private void B_sub_trainer_Click(object sender, RoutedEventArgs e)
+		{
+			GroupList group = dg_grlist.SelectedItem as GroupList;
+			Trainer_win win = new Trainer_win(this, group.trainer_id);
+			win.Show();
+		}
+
+		private void B_unsub_trainer_Click(object sender, RoutedEventArgs e)
+		{
+			GroupList group = dg_grunlist.SelectedItem as GroupList;
+			Trainer_win win = new Trainer_win(this, group.trainer_id);
+			win.Show();
+		}
 	}
 }

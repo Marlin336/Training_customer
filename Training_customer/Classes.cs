@@ -64,4 +64,26 @@ namespace Training_customer
 			this.time = time;
 		}
 	}
+	public class CustomList
+	{
+		public int id { get; set; }
+		public string fname { get; set; }
+		public string sname { get; set; }
+		public string pname { get; set; }
+		public string birthday { get; set; }
+		public string mail { get; set; }
+		public string login { get; set; }
+		public string pass { get; set; }
+		public CustomList(int id, string sname, string fname, string pname, string birthday, string mail, string login, string pass)
+		{
+			this.id = id;
+			this.fname = fname;
+			this.sname = sname;
+			this.pname = pname;
+			this.birthday = birthday;
+			this.mail = mail;
+			this.login = login;
+			this.pass = pass;
+		}
+	}
 }

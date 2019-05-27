@@ -16,7 +16,7 @@
         <TabControl Margin="0,65,0,0">
             <TabItem Header="Мои группы">
                 <Grid Background="#FFE5E5E5">
-                    <DataGrid x:Name="dg_grlist" Margin="0,0,0,40" IsReadOnly="True" SelectedCellsChanged="Dg_grlist_SelectedCellsChanged">
+                    <DataGrid x:Name="dg_grlist" Margin="0,0,0,40" IsReadOnly="True" SelectedCellsChanged="Dg_grlist_SelectedCellsChanged" FontSize="14">
                         <DataGrid.Columns>
                             <DataGridTextColumn Binding="{Binding id}" Header="Код группы"/>
                             <DataGridTextColumn Binding="{Binding trainer_id}" Visibility="Collapsed"/>
@@ -29,14 +29,14 @@
                     </DataGrid>
                     <Menu VerticalAlignment="Bottom" Height="40">
                         <MenuItem x:Name="b_sub_info" Header="Подробно" Height="40" FontSize="14" IsEnabled="False"/>
-                        <MenuItem x:Name="b_sub_trainer" Header="О тренере" Height="40" FontSize="14" IsEnabled="False"/>
+                        <MenuItem x:Name="b_sub_trainer" Header="О тренере" Height="40" FontSize="14" IsEnabled="False" Click="B_sub_trainer_Click"/>
                         <MenuItem x:Name="b_sub_unsub" Header="Отписаться" Height="40" FontSize="14" IsEnabled="False" Click="B_sub_unsub_Click"/>
                     </Menu>
                 </Grid>
             </TabItem>
             <TabItem Header="Доступные группы">
                 <Grid Background="#FFE5E5E5">
-                    <DataGrid x:Name="dg_grunlist" Margin="0,0,0,40" IsReadOnly="True" SelectedCellsChanged="Dg_grunlist_SelectedCellsChanged">
+                    <DataGrid x:Name="dg_grunlist" Margin="0,0,0,40" IsReadOnly="True" SelectedCellsChanged="Dg_grunlist_SelectedCellsChanged" FontSize="14">
                         <DataGrid.Columns>
                             <DataGridTextColumn Binding="{Binding id}" Header="Код группы"/>
                             <DataGridTextColumn Binding="{Binding trainer_id}" Visibility="Collapsed"/>
@@ -49,7 +49,7 @@
                     </DataGrid>
                     <Menu VerticalAlignment="Bottom" Height="40">
                         <MenuItem x:Name="b_unsub_info" Header="Подробно" Height="40" FontSize="14" IsEnabled="False"/>
-                        <MenuItem x:Name="b_unsub_trainer" Header="О тренере" Height="40" FontSize="14" IsEnabled="False"/>
+                        <MenuItem x:Name="b_unsub_trainer" Header="О тренере" Height="40" FontSize="14" IsEnabled="False" Click="B_unsub_trainer_Click"/>
                         <MenuItem x:Name="b_unsub_sub" Header="Подписаться" Height="40" FontSize="14" IsEnabled="False" Click="B_unsub_sub_Click"/>
                         <MenuItem x:Name="b_unsub_update" Header="Обновить список" Height="40" FontSize="14" Click="B_unsub_update_Click"/>
                     </Menu>

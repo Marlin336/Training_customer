@@ -13,7 +13,7 @@
         <DatePicker x:Name="date_birth" HorizontalAlignment="Left" Margin="111,96,0,0" VerticalAlignment="Top" Width="162" DisplayDate="2000-01-01" TabIndex="4" IsTabStop="True"/>
         <TextBox x:Name="tb_mail" HorizontalAlignment="Left" Height="23" Margin="79,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" TabIndex="5"/>
         <TextBox x:Name="tb_login" HorizontalAlignment="Left" Height="23" Margin="102,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" TabIndex="6"/>
-        <PasswordBox x:Name="tb_pass" HorizontalAlignment="Left" Margin="102,203,0,0" VerticalAlignment="Top" Width="171" Height="23" TabIndex="7"/>
+        <PasswordBox x:Name="tb_pass" HorizontalAlignment="Left" Margin="102,203,0,0" VerticalAlignment="Top" Width="171" Height="23" TabIndex="7" GotFocus="Tb_pass_GotFocus"/>
         <PasswordBox x:Name="tb_repass" HorizontalAlignment="Left" Margin="102,231,0,0" VerticalAlignment="Top" Width="171" Height="23" TabIndex="8"/>
         <Label Content="Имя" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="39,9,0,0"/>
         <Label Content="Повтор пароля" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="3,228,0,0"/>

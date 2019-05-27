@@ -4,16 +4,16 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Training_customer"
-        mc:Ignorable="d" Height="152" Width="404" Title="Профиль" MinWidth="274" MinHeight="152">
+        mc:Ignorable="d" Height="183" Width="404" Title="Профиль" MinWidth="274" MinHeight="152" ResizeMode="NoResize">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="l_name" Content="Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" FontWeight="Bold"/>
-        <Label Content="Логин: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,88,0,0"/>
-        <Label Content="E-mail: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,62,0,0"/>
-        <Label Content="Дата рождения: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,36,0,0"/>
-        <Button x:Name="b_edit" Margin="0,0,10,7" HorizontalAlignment="Right" Width="50" ToolTip="Редактировать" Height="31" VerticalAlignment="Bottom" Click="B_edit_Click"/>
+        <Label x:Name="l_name" Content="Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="l_login" Content="Логин: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,112,0,0" FontSize="14"/>
+        <Label x:Name="l_mail" Content="E-mail: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,78,0,0" FontSize="14"/>
+        <Label x:Name="l_birth" Content="Дата рождения: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,44,0,0" FontSize="14"/>
+        <Button x:Name="b_edit" Margin="0,0,10,10" HorizontalAlignment="Right" ToolTip="Редактировать" Height="35" VerticalAlignment="Bottom" Click="B_edit_Click" Content="Редактировать" FontSize="14" Width="105"/>
 
     </Grid>
 </Window>
