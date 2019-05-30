@@ -10,9 +10,6 @@
         <TabControl x:Name="tab_panel" Margin="0,10,0,0">
             <TabItem x:Name="tab_log" Header="Журнал посещений">
                 <Grid Background="#FFE5E5E5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
-                    </Grid.ColumnDefinitions>
                     <DataGrid x:Name="dg_log" IsReadOnly="True" FontSize="14" MouseDoubleClick="Dg_log_MouseDoubleClick">
                         <DataGrid.Columns>
                             <DataGridTextColumn Binding="{Binding id}" Visibility="Collapsed"/>
@@ -29,16 +26,13 @@
             </TabItem>
             <TabItem x:Name="tab_transact" Header="Журнал транзакций">
                 <Grid Background="#FFE5E5E5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
-                    </Grid.ColumnDefinitions>
-                    <DataGrid x:Name="dg_trans" FontSize="14" MouseDoubleClick="Dg_trans_MouseDoubleClick">
+                    <DataGrid x:Name="dg_trans" IsReadOnly="True" FontSize="14" MouseDoubleClick="Dg_trans_MouseDoubleClick">
                         <DataGrid.Columns>
-                            <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="id" Visibility="Collapsed"/>
-                            <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Администратор"/>
-                            <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Сумма"/>
-                            <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Дата"/>
-                            <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Время"/>
+                            <DataGridTextColumn Binding="{Binding id}" Header="id" Visibility="Collapsed"/>
+                            <DataGridTextColumn Binding="{Binding admin}" Header="Администратор"/>
+                            <DataGridTextColumn Binding="{Binding addition}" Header="Сумма"/>
+                            <DataGridTextColumn Binding="{Binding date}" Header="Дата"/>
+                            <DataGridTextColumn Binding="{Binding time}" Header="Время"/>
                         </DataGrid.Columns>
                     </DataGrid>
                 </Grid>

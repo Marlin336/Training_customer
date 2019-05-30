@@ -78,7 +78,7 @@ namespace Training_customer
 		{
 			try
 			{
-				string sql = "select gv.id, gv.trainer_id, gv.trainer, gv.min_age, gv.max_age, gv.cost, gv.sub from group_view_admin as gv " +
+				string sql = "SELECT * from customer_group_age(" + user_id + ") " +
 				"except(select gv.id, gv.trainer_id, gv.trainer, gv.min_age, gv.max_age, gv.cost, gv.sub from group_view_admin as gv, \"customer-customer_group\" as ccg " +
 				"where ccg.id_group = gv.id and ccg.id_customer = " + user_id + ")";
 				NpgsqlCommand comm = new NpgsqlCommand(sql, conn);
@@ -236,6 +236,12 @@ namespace Training_customer
 		private void B_unsub_info_Click(object sender, RoutedEventArgs e)
 		{
 			Group_win win = new Group_win(this, dg_grunlist.SelectedItem as GroupList);
+			win.Show();
+		}
+
+		private void B_sub_info_Click(object sender, RoutedEventArgs e)
+		{
+			Group_win win = new Group_win(this, dg_grlist.SelectedItem as GroupList);
 			win.Show();
 		}
 	}

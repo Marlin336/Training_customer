@@ -31,7 +31,7 @@ namespace Training_customer
 
 		private void FillLogTable()
 		{
-			string sql = "select id, group_id, date, in_time, out_time, admin, trainer, transact_id from log_view where customer_id = " + super.user_id;
+			string sql = "select id, group_id, date, in_time, out_time, admin, trainer, transact_id from log_view where customer_id = " + super.user_id + " order by id";
 			NpgsqlCommand comm = new NpgsqlCommand(sql, super.conn);
 			try
 			{
@@ -54,7 +54,7 @@ namespace Training_customer
 		}
 		private void FillTransactTable()
 		{
-			string sql = "select id, admin, addition, date, time from transact_log_view_cust where customer_id = " + super.user_id;
+			string sql = "select id, admin, addition, date, time from transact_log_view_cust where customer_id = " + super.user_id + " order by id";
 			NpgsqlCommand comm = new NpgsqlCommand(sql, super.conn);
 			try
 			{

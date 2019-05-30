@@ -69,6 +69,22 @@ namespace Training_customer
 				}
 				super.conn.Close();
 				UpdateList();
+
+				cb_mon.IsChecked = week[0];
+				cb_tue.IsChecked = week[1];
+				cb_wed.IsChecked = week[2];
+				cb_thu.IsChecked = week[3];
+				cb_fri.IsChecked = week[4];
+				cb_sat.IsChecked = week[5];
+				cb_sun.IsChecked = week[6];
+
+				tp_mon.Text = timetable[0];
+				tp_tue.Text = timetable[1];
+				tp_wed.Text = timetable[2];
+				tp_thu.Text = timetable[3];
+				tp_fri.Text = timetable[4];
+				tp_sat.Text = timetable[5];
+				tp_sun.Text = timetable[6];
 			}
 			catch (NpgsqlException ex)
 			{
