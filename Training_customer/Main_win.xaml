@@ -31,6 +31,7 @@
                         <MenuItem x:Name="b_sub_info" Header="Подробно" Height="40" FontSize="14" IsEnabled="False" Click="B_sub_info_Click"/>
                         <MenuItem x:Name="b_sub_trainer" Header="О тренере" Height="40" FontSize="14" IsEnabled="False" Click="B_sub_trainer_Click"/>
                         <MenuItem x:Name="b_sub_unsub" Header="Отписаться" Height="40" FontSize="14" IsEnabled="False" Click="B_sub_unsub_Click"/>
+                        <MenuItem x:Name="b_sub_update" Header="Обновить список" Height="40" FontSize="14" Click="B_sub_update_Click"/>
                     </Menu>
                 </Grid>
             </TabItem>

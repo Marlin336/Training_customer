@@ -244,5 +244,10 @@ namespace Training_customer
 			Group_win win = new Group_win(this, dg_grlist.SelectedItem as GroupList);
 			win.Show();
 		}
+
+		private void B_sub_update_Click(object sender, RoutedEventArgs e)
+		{
+			UpdateSubTable();
+		}
 	}
 }
