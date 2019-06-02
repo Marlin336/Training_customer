@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Training_customer
+﻿namespace Training_customer
 {
-    public class GroupList
+	public class GroupList
 	{
 		public int id { get; set; }
 		public int trainer_id { get; set; }

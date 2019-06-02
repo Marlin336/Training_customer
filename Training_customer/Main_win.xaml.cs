@@ -1,17 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Npgsql;
+using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using Npgsql;
 
 namespace Training_customer
 {
@@ -24,6 +14,7 @@ namespace Training_customer
 		public Login_win super { get; }
 		public int user_id { get; }
 		public NpgsqlConnection conn;
+
 		public Main_win(Login_win super, int id, string login, string pass)
 		{
 			this.super = super;
@@ -102,7 +93,6 @@ namespace Training_customer
 			}
 			finally { conn.Close(); }
 		}
-
 		public void UpdateSubTable()
 		{
 			dg_grlist.Items.Clear();
@@ -119,13 +109,11 @@ namespace Training_customer
 			Profile_win profile = new Profile_win(this);
 			profile.Show();
 		}
-
 		private void B_exit_Click(object sender, RoutedEventArgs e)
 		{
 			logout = true;
 			Close();
 		}
-
 		private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
 		{
 			if (logout)
@@ -150,24 +138,19 @@ namespace Training_customer
 					e.Cancel = true;
 			}
 		}
-
 		private void B_log_Click(object sender, RoutedEventArgs e)
 		{
 			Log_win log = new Log_win(this);
 			log.Show();
 		}
-
 		private void Dg_grlist_SelectedCellsChanged(object sender, SelectedCellsChangedEventArgs e)
 		{
 			b_sub_info.IsEnabled = b_sub_trainer.IsEnabled = b_sub_unsub.IsEnabled = dg_grlist.SelectedCells.Count != 0;
 		}
-
 		private void Dg_grunlist_SelectedCellsChanged(object sender, SelectedCellsChangedEventArgs e)
 		{
 			b_unsub_info.IsEnabled = b_unsub_trainer.IsEnabled = b_unsub_sub.IsEnabled = dg_grunlist.SelectedCells.Count != 0;
 		}
-		#endregion
-
 		private void B_unsub_update_Click(object sender, RoutedEventArgs e)
 		{
 			UpdateUnsubTable();
@@ -218,36 +201,32 @@ namespace Training_customer
 			}
 			finally { conn.Close(); }
 		}
-
 		private void B_sub_trainer_Click(object sender, RoutedEventArgs e)
 		{
 			GroupList group = dg_grlist.SelectedItem as GroupList;
 			Trainer_win win = new Trainer_win(this, group.trainer_id);
 			win.Show();
 		}
-
 		private void B_unsub_trainer_Click(object sender, RoutedEventArgs e)
 		{
 			GroupList group = dg_grunlist.SelectedItem as GroupList;
 			Trainer_win win = new Trainer_win(this, group.trainer_id);
 			win.Show();
 		}
-
 		private void B_unsub_info_Click(object sender, RoutedEventArgs e)
 		{
 			Group_win win = new Group_win(this, dg_grunlist.SelectedItem as GroupList);
 			win.Show();
 		}
-
 		private void B_sub_info_Click(object sender, RoutedEventArgs e)
 		{
 			Group_win win = new Group_win(this, dg_grlist.SelectedItem as GroupList);
 			win.Show();
 		}
-
 		private void B_sub_update_Click(object sender, RoutedEventArgs e)
 		{
 			UpdateSubTable();
 		}
+		#endregion
 	}
 }

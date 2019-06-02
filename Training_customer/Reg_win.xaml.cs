@@ -1,18 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Npgsql;
+using System;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using System.Text.RegularExpressions;
-using Npgsql;
 
 namespace Training_customer
 {
@@ -24,7 +12,6 @@ namespace Training_customer
 		private bool edit { get; }
 		private Profile_win prof { get; }
 		private int id { get; }
-
 		private string old_login { get; }
 
 		public Reg_win()
@@ -47,7 +34,7 @@ namespace Training_customer
 			date_birth.Text = cust.birthday;
 			tb_pass.Password = tb_repass.Password = cust.pass;
 		}
-
+		#region events
 		private void B_reg_Click(object sender, RoutedEventArgs e)
 		{
 			try
@@ -92,7 +79,6 @@ namespace Training_customer
 				MessageBox.Show(ex.Message, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error, MessageBoxResult.OK);
 			}
 		}
-
 		private void B_edit_Click(object sender, RoutedEventArgs e)
 		{
 			try
@@ -147,11 +133,11 @@ namespace Training_customer
 				MessageBox.Show(ex.Message, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error, MessageBoxResult.OK);
 			}
 		}
-
 		private void Tb_pass_GotFocus(object sender, RoutedEventArgs e)
 		{
 			tb_repass.Clear();
 		}
+		#endregion
 
 	}
 }
