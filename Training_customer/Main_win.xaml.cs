@@ -45,7 +45,7 @@ namespace Training_customer
 			try
 			{
 				string sql = "select gv.id, gv.trainer_id, gv.trainer, gv.min_age, gv.max_age, gv.cost, gv.sub " +
-				"from group_view_admin as gv, \"customer-customer_group\" where \"customer-customer_group\".id_group = gv.id and \"customer-customer_group\".id_customer = " + user_id;
+				"from group_view as gv, \"customer-customer_group\" where \"customer-customer_group\".id_group = gv.id and \"customer-customer_group\".id_customer = " + user_id;
 				NpgsqlCommand comm = new NpgsqlCommand(sql, conn);
 				conn.Open();
 				NpgsqlDataReader reader = comm.ExecuteReader();
@@ -70,7 +70,7 @@ namespace Training_customer
 			try
 			{
 				string sql = "SELECT * from customer_group_age(" + user_id + ") " +
-				"except(select gv.id, gv.trainer_id, gv.trainer, gv.min_age, gv.max_age, gv.cost, gv.sub from group_view_admin as gv, \"customer-customer_group\" as ccg " +
+				"except(select gv.id, gv.trainer_id, gv.trainer, gv.min_age, gv.max_age, gv.cost, gv.sub from group_view as gv, \"customer-customer_group\" as ccg " +
 				"where ccg.id_group = gv.id and ccg.id_customer = " + user_id + ")";
 				NpgsqlCommand comm = new NpgsqlCommand(sql, conn);
 				conn.Open();
